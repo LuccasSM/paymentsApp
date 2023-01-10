@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8380F4E296D8F5800CAE3B0 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F4D296D8F5800CAE3B0 /* SplashInteractor.swift */; };
+		F8380F50296D8F6000CAE3B0 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F4F296D8F6000CAE3B0 /* SplashPresenter.swift */; };
+		F8380F52296D8F6B00CAE3B0 /* SplashConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F51296D8F6B00CAE3B0 /* SplashConfigurator.swift */; };
+		F8380F54296D8F7200CAE3B0 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F53296D8F7200CAE3B0 /* SplashRouter.swift */; };
 		F867AAA5296C36B300C14767 /* SetupStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867AAA2296C36B300C14767 /* SetupStatusBar.swift */; };
 		F867AAA6296C36B300C14767 /* AppRotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867AAA3296C36B300C14767 /* AppRotations.swift */; };
 		F867AAA7296C36B300C14767 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867AAA4296C36B300C14767 /* Colors.swift */; };
 		F8BCCBD3296C35280088AF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BCCBD2296C35280088AF28 /* AppDelegate.swift */; };
 		F8BCCBD5296C35280088AF28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BCCBD4296C35280088AF28 /* SceneDelegate.swift */; };
-		F8BCCBD7296C35280088AF28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BCCBD6296C35280088AF28 /* ViewController.swift */; };
+		F8BCCBD7296C35280088AF28 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BCCBD6296C35280088AF28 /* SplashViewController.swift */; };
 		F8BCCBDA296C35280088AF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BCCBD8296C35280088AF28 /* Main.storyboard */; };
 		F8BCCBDC296C352A0088AF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BCCBDB296C352A0088AF28 /* Assets.xcassets */; };
 		F8BCCBDF296C352A0088AF28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BCCBDD296C352A0088AF28 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8380F4D296D8F5800CAE3B0 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		F8380F4F296D8F6000CAE3B0 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		F8380F51296D8F6B00CAE3B0 /* SplashConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashConfigurator.swift; sourceTree = "<group>"; };
+		F8380F53296D8F7200CAE3B0 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		F867AAA2296C36B300C14767 /* SetupStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupStatusBar.swift; sourceTree = "<group>"; };
 		F867AAA3296C36B300C14767 /* AppRotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRotations.swift; sourceTree = "<group>"; };
 		F867AAA4296C36B300C14767 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F8BCCBCF296C35280088AF28 /* paymentsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paymentsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BCCBD2296C35280088AF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8BCCBD4296C35280088AF28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8BCCBD6296C35280088AF28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8BCCBD6296C35280088AF28 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F8BCCBD9296C35280088AF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8BCCBDB296C352A0088AF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8BCCBDE296C352A0088AF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8380F4C296D8F3C00CAE3B0 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F8380F51296D8F6B00CAE3B0 /* SplashConfigurator.swift */,
+				F8380F4D296D8F5800CAE3B0 /* SplashInteractor.swift */,
+				F8380F4F296D8F6000CAE3B0 /* SplashPresenter.swift */,
+				F8380F53296D8F7200CAE3B0 /* SplashRouter.swift */,
+				F8BCCBD6296C35280088AF28 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		F867AAA0296C368A00C14767 /* Storyboard-Xib */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +94,7 @@
 		F867AAA9296C373500C14767 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F8BCCBD6296C35280088AF28 /* ViewController.swift */,
+				F8380F4C296D8F3C00CAE3B0 /* Splash */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -187,11 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8BCCBD7296C35280088AF28 /* ViewController.swift in Sources */,
+				F8BCCBD7296C35280088AF28 /* SplashViewController.swift in Sources */,
+				F8380F4E296D8F5800CAE3B0 /* SplashInteractor.swift in Sources */,
 				F867AAA7296C36B300C14767 /* Colors.swift in Sources */,
+				F8380F50296D8F6000CAE3B0 /* SplashPresenter.swift in Sources */,
 				F867AAA6296C36B300C14767 /* AppRotations.swift in Sources */,
+				F8380F54296D8F7200CAE3B0 /* SplashRouter.swift in Sources */,
 				F867AAA5296C36B300C14767 /* SetupStatusBar.swift in Sources */,
 				F8BCCBD3296C35280088AF28 /* AppDelegate.swift in Sources */,
+				F8380F52296D8F6B00CAE3B0 /* SplashConfigurator.swift in Sources */,
 				F8BCCBD5296C35280088AF28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
