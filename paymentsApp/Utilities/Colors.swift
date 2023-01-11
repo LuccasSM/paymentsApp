@@ -15,4 +15,5 @@ struct Colors {
     // MARK: Setup App Colors
 
     static let colorDefault = Colors.rgb(red: 105, green: 175, blue: 168)
+    static let grayLight = Colors.rgb(red: 242, green: 237, blue: 234)
 }

@@ -53,6 +53,8 @@ class SplashViewController: UIViewController, SplashViewControllerDisplayLogic {
         setupStatusBarHidden()
         setupAnimations()
         setupConstraints()
+        lockOrientation()
+        navigationPreLogin()
     }
     
     // MARK: Setup constraints
@@ -62,7 +64,7 @@ class SplashViewController: UIViewController, SplashViewControllerDisplayLogic {
             logo.widthAnchor.constraint(equalToConstant: 350),
             logo.heightAnchor.constraint(equalToConstant: 105),
             logo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logo.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor, constant: -60),
+            logo.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor, constant: -65),
         ]
         
         let spinner = [
@@ -89,16 +91,9 @@ class SplashViewController: UIViewController, SplashViewControllerDisplayLogic {
                 }
             })
         })
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 6, execute: {
-            UIView.animate(withDuration: 0, animations: {}, completion: { done in
-                if done {
-                    DispatchQueue.main.async {
-                        print("------------------------ Teste ------------------------")
-//                        self.spinner.stopAnimating()
-                    }
-                }
-            })
-        })
+    }
+    
+    @objc func navigationPreLogin() {
+        router?.routeToPreLogin()
     }
 }

@@ -20,6 +20,12 @@
 		F8BCCBDA296C35280088AF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BCCBD8296C35280088AF28 /* Main.storyboard */; };
 		F8BCCBDC296C352A0088AF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BCCBDB296C352A0088AF28 /* Assets.xcassets */; };
 		F8BCCBDF296C352A0088AF28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BCCBDD296C352A0088AF28 /* LaunchScreen.storyboard */; };
+		F8EAE920296E3BB6001475E0 /* PreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EAE91F296E3BB6001475E0 /* PreLoginViewController.swift */; };
+		F8EAE922296E3BC2001475E0 /* PreLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EAE921296E3BC2001475E0 /* PreLoginInteractor.swift */; };
+		F8EAE924296E3BC9001475E0 /* PreLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EAE923296E3BC9001475E0 /* PreLoginPresenter.swift */; };
+		F8EAE926296E3BD7001475E0 /* PreLoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EAE925296E3BD7001475E0 /* PreLoginConfigurator.swift */; };
+		F8EAE928296E3BE1001475E0 /* PreLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EAE927296E3BE1001475E0 /* PreLoginRouter.swift */; };
+		F8EAE92A296E3BE8001475E0 /* PreLoginExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EAE929296E3BE8001475E0 /* PreLoginExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		F8BCCBDB296C352A0088AF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8BCCBDE296C352A0088AF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8BCCBE0296C352A0088AF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8EAE91F296E3BB6001475E0 /* PreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginViewController.swift; sourceTree = "<group>"; };
+		F8EAE921296E3BC2001475E0 /* PreLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginInteractor.swift; sourceTree = "<group>"; };
+		F8EAE923296E3BC9001475E0 /* PreLoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginPresenter.swift; sourceTree = "<group>"; };
+		F8EAE925296E3BD7001475E0 /* PreLoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginConfigurator.swift; sourceTree = "<group>"; };
+		F8EAE927296E3BE1001475E0 /* PreLoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginRouter.swift; sourceTree = "<group>"; };
+		F8EAE929296E3BE8001475E0 /* PreLoginExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F8380F4C296D8F3C00CAE3B0 /* Splash */,
+				F8EAE91E296E3BA2001475E0 /* PreLogin */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -134,6 +147,19 @@
 				F8BCCBE0296C352A0088AF28 /* Info.plist */,
 			);
 			path = paymentsApp;
+			sourceTree = "<group>";
+		};
+		F8EAE91E296E3BA2001475E0 /* PreLogin */ = {
+			isa = PBXGroup;
+			children = (
+				F8EAE925296E3BD7001475E0 /* PreLoginConfigurator.swift */,
+				F8EAE929296E3BE8001475E0 /* PreLoginExtension.swift */,
+				F8EAE921296E3BC2001475E0 /* PreLoginInteractor.swift */,
+				F8EAE923296E3BC9001475E0 /* PreLoginPresenter.swift */,
+				F8EAE927296E3BE1001475E0 /* PreLoginRouter.swift */,
+				F8EAE91F296E3BB6001475E0 /* PreLoginViewController.swift */,
+			);
+			path = PreLogin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,13 +236,19 @@
 				F8BCCBD7296C35280088AF28 /* SplashViewController.swift in Sources */,
 				F8380F4E296D8F5800CAE3B0 /* SplashInteractor.swift in Sources */,
 				F867AAA7296C36B300C14767 /* Colors.swift in Sources */,
+				F8EAE924296E3BC9001475E0 /* PreLoginPresenter.swift in Sources */,
 				F8380F50296D8F6000CAE3B0 /* SplashPresenter.swift in Sources */,
+				F8EAE920296E3BB6001475E0 /* PreLoginViewController.swift in Sources */,
+				F8EAE928296E3BE1001475E0 /* PreLoginRouter.swift in Sources */,
+				F8EAE926296E3BD7001475E0 /* PreLoginConfigurator.swift in Sources */,
 				F867AAA6296C36B300C14767 /* AppRotations.swift in Sources */,
+				F8EAE922296E3BC2001475E0 /* PreLoginInteractor.swift in Sources */,
 				F8380F54296D8F7200CAE3B0 /* SplashRouter.swift in Sources */,
 				F867AAA5296C36B300C14767 /* SetupStatusBar.swift in Sources */,
 				F8BCCBD3296C35280088AF28 /* AppDelegate.swift in Sources */,
 				F8380F52296D8F6B00CAE3B0 /* SplashConfigurator.swift in Sources */,
 				F8BCCBD5296C35280088AF28 /* SceneDelegate.swift in Sources */,
+				F8EAE92A296E3BE8001475E0 /* PreLoginExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
