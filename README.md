@@ -1,14 +1,14 @@
 # paymentsApp
 
-- Struct App (architecture):
+*** Struct App (architecture): ***
 
-* VIP (Clean Swift)
+- VIP (Clean Swift)
 
 ————————————— || ——————————————
 
-- Setup Scenes:
+*** Setup Scenes: ***
 
-* Splash;
-* PreLogin;
+- Splash;
+- PreLogin;
 
 ————————————— || ——————————————
