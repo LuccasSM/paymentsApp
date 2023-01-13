@@ -18,3 +18,7 @@ public func setupStatusBarVisible() {
 public func setupStatusBarLight() {
     UIApplication.shared.statusBarStyle = .lightContent
 }
+
+public func setupStatusBarDark() {
+    UIApplication.shared.statusBarStyle = .darkContent
+}

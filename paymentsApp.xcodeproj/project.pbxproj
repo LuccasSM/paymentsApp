@@ -11,6 +11,17 @@
 		F8380F50296D8F6000CAE3B0 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F4F296D8F6000CAE3B0 /* SplashPresenter.swift */; };
 		F8380F52296D8F6B00CAE3B0 /* SplashConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F51296D8F6B00CAE3B0 /* SplashConfigurator.swift */; };
 		F8380F54296D8F7200CAE3B0 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F53296D8F7200CAE3B0 /* SplashRouter.swift */; };
+		F846E3832970A8DC0089E19B /* PixHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E3822970A8DC0089E19B /* PixHomeViewController.swift */; };
+		F846E3852970A8F50089E19B /* AcTokenHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E3842970A8F50089E19B /* AcTokenHomeViewController.swift */; };
+		F846E3882970A9350089E19B /* LoginOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E3872970A9350089E19B /* LoginOptionsViewController.swift */; };
+		F846E38B2970ABA30089E19B /* LoginOptionsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E38A2970ABA30089E19B /* LoginOptionsExtension.swift */; };
+		F846E38D2970ABB10089E19B /* LoginOptionsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E38C2970ABB10089E19B /* LoginOptionsConfigurator.swift */; };
+		F846E38F2970ABBA0089E19B /* LoginOptionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E38E2970ABBA0089E19B /* LoginOptionsInteractor.swift */; };
+		F846E3912970ABC10089E19B /* LoginOptionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E3902970ABC10089E19B /* LoginOptionsPresenter.swift */; };
+		F846E3932970ABCA0089E19B /* LoginOptionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E3922970ABCA0089E19B /* LoginOptionsRouter.swift */; };
+		F846E3972970B32E0089E19B /* animatedMobilePhone.gif in Resources */ = {isa = PBXBuildFile; fileRef = F846E3962970B32E0089E19B /* animatedMobilePhone.gif */; };
+		F846E3992970B3460089E19B /* SetupGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E3982970B3460089E19B /* SetupGif.swift */; };
+		F846E39B2970B5820089E19B /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E39A2970B5820089E19B /* TesteViewController.swift */; };
 		F867AAA5296C36B300C14767 /* SetupStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867AAA2296C36B300C14767 /* SetupStatusBar.swift */; };
 		F867AAA6296C36B300C14767 /* AppRotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867AAA3296C36B300C14767 /* AppRotations.swift */; };
 		F867AAA7296C36B300C14767 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867AAA4296C36B300C14767 /* Colors.swift */; };
@@ -33,6 +44,17 @@
 		F8380F4F296D8F6000CAE3B0 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		F8380F51296D8F6B00CAE3B0 /* SplashConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashConfigurator.swift; sourceTree = "<group>"; };
 		F8380F53296D8F7200CAE3B0 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		F846E3822970A8DC0089E19B /* PixHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixHomeViewController.swift; sourceTree = "<group>"; };
+		F846E3842970A8F50089E19B /* AcTokenHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcTokenHomeViewController.swift; sourceTree = "<group>"; };
+		F846E3872970A9350089E19B /* LoginOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsViewController.swift; sourceTree = "<group>"; };
+		F846E38A2970ABA30089E19B /* LoginOptionsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsExtension.swift; sourceTree = "<group>"; };
+		F846E38C2970ABB10089E19B /* LoginOptionsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsConfigurator.swift; sourceTree = "<group>"; };
+		F846E38E2970ABBA0089E19B /* LoginOptionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsInteractor.swift; sourceTree = "<group>"; };
+		F846E3902970ABC10089E19B /* LoginOptionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsPresenter.swift; sourceTree = "<group>"; };
+		F846E3922970ABCA0089E19B /* LoginOptionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsRouter.swift; sourceTree = "<group>"; };
+		F846E3962970B32E0089E19B /* animatedMobilePhone.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animatedMobilePhone.gif; sourceTree = "<group>"; };
+		F846E3982970B3460089E19B /* SetupGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupGif.swift; sourceTree = "<group>"; };
+		F846E39A2970B5820089E19B /* TesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
 		F867AAA2296C36B300C14767 /* SetupStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupStatusBar.swift; sourceTree = "<group>"; };
 		F867AAA3296C36B300C14767 /* AppRotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRotations.swift; sourceTree = "<group>"; };
 		F867AAA4296C36B300C14767 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -75,6 +97,61 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		F846E37F2970A7FC0089E19B /* Pix */ = {
+			isa = PBXGroup;
+			children = (
+				F846E3822970A8DC0089E19B /* PixHomeViewController.swift */,
+			);
+			path = Pix;
+			sourceTree = "<group>";
+		};
+		F846E3802970A8020089E19B /* AcToken */ = {
+			isa = PBXGroup;
+			children = (
+				F846E3842970A8F50089E19B /* AcTokenHomeViewController.swift */,
+			);
+			path = AcToken;
+			sourceTree = "<group>";
+		};
+		F846E3812970A8080089E19B /* Access */ = {
+			isa = PBXGroup;
+			children = (
+				F846E3892970AA000089E19B /* LoginOptions */,
+			);
+			path = Access;
+			sourceTree = "<group>";
+		};
+		F846E3892970AA000089E19B /* LoginOptions */ = {
+			isa = PBXGroup;
+			children = (
+				F846E38C2970ABB10089E19B /* LoginOptionsConfigurator.swift */,
+				F846E38A2970ABA30089E19B /* LoginOptionsExtension.swift */,
+				F846E38E2970ABBA0089E19B /* LoginOptionsInteractor.swift */,
+				F846E3902970ABC10089E19B /* LoginOptionsPresenter.swift */,
+				F846E3922970ABCA0089E19B /* LoginOptionsRouter.swift */,
+				F846E3872970A9350089E19B /* LoginOptionsViewController.swift */,
+				F846E39A2970B5820089E19B /* TesteViewController.swift */,
+			);
+			path = LoginOptions;
+			sourceTree = "<group>";
+		};
+		F846E3942970B2FE0089E19B /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				F846E3952970B3040089E19B /* Image-Json */,
+				F846E3982970B3460089E19B /* SetupGif.swift */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
+		F846E3952970B3040089E19B /* Image-Json */ = {
+			isa = PBXGroup;
+			children = (
+				F846E3962970B32E0089E19B /* animatedMobilePhone.gif */,
+			);
+			path = "Image-Json";
+			sourceTree = "<group>";
+		};
 		F867AAA0296C368A00C14767 /* Storyboard-Xib */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +164,7 @@
 		F867AAA1296C36A400C14767 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F846E3942970B2FE0089E19B /* Gifs */,
 				F867AAA3296C36B300C14767 /* AppRotations.swift */,
 				F8BCCBDB296C352A0088AF28 /* Assets.xcassets */,
 				F867AAA4296C36B300C14767 /* Colors.swift */,
@@ -108,6 +186,9 @@
 			children = (
 				F8380F4C296D8F3C00CAE3B0 /* Splash */,
 				F8EAE91E296E3BA2001475E0 /* PreLogin */,
+				F846E37F2970A7FC0089E19B /* Pix */,
+				F846E3802970A8020089E19B /* AcToken */,
+				F846E3812970A8080089E19B /* Access */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -220,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F846E3972970B32E0089E19B /* animatedMobilePhone.gif in Resources */,
 				F8BCCBDF296C352A0088AF28 /* LaunchScreen.storyboard in Resources */,
 				F8BCCBDC296C352A0088AF28 /* Assets.xcassets in Resources */,
 				F8BCCBDA296C35280088AF28 /* Main.storyboard in Resources */,
@@ -233,20 +315,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F846E3832970A8DC0089E19B /* PixHomeViewController.swift in Sources */,
+				F846E3912970ABC10089E19B /* LoginOptionsPresenter.swift in Sources */,
+				F846E38D2970ABB10089E19B /* LoginOptionsConfigurator.swift in Sources */,
 				F8BCCBD7296C35280088AF28 /* SplashViewController.swift in Sources */,
 				F8380F4E296D8F5800CAE3B0 /* SplashInteractor.swift in Sources */,
 				F867AAA7296C36B300C14767 /* Colors.swift in Sources */,
+				F846E38F2970ABBA0089E19B /* LoginOptionsInteractor.swift in Sources */,
 				F8EAE924296E3BC9001475E0 /* PreLoginPresenter.swift in Sources */,
+				F846E3992970B3460089E19B /* SetupGif.swift in Sources */,
 				F8380F50296D8F6000CAE3B0 /* SplashPresenter.swift in Sources */,
+				F846E3932970ABCA0089E19B /* LoginOptionsRouter.swift in Sources */,
 				F8EAE920296E3BB6001475E0 /* PreLoginViewController.swift in Sources */,
 				F8EAE928296E3BE1001475E0 /* PreLoginRouter.swift in Sources */,
 				F8EAE926296E3BD7001475E0 /* PreLoginConfigurator.swift in Sources */,
+				F846E3882970A9350089E19B /* LoginOptionsViewController.swift in Sources */,
 				F867AAA6296C36B300C14767 /* AppRotations.swift in Sources */,
+				F846E39B2970B5820089E19B /* TesteViewController.swift in Sources */,
 				F8EAE922296E3BC2001475E0 /* PreLoginInteractor.swift in Sources */,
 				F8380F54296D8F7200CAE3B0 /* SplashRouter.swift in Sources */,
 				F867AAA5296C36B300C14767 /* SetupStatusBar.swift in Sources */,
 				F8BCCBD3296C35280088AF28 /* AppDelegate.swift in Sources */,
 				F8380F52296D8F6B00CAE3B0 /* SplashConfigurator.swift in Sources */,
+				F846E38B2970ABA30089E19B /* LoginOptionsExtension.swift in Sources */,
+				F846E3852970A8F50089E19B /* AcTokenHomeViewController.swift in Sources */,
 				F8BCCBD5296C35280088AF28 /* SceneDelegate.swift in Sources */,
 				F8EAE92A296E3BE8001475E0 /* PreLoginExtension.swift in Sources */,
 			);

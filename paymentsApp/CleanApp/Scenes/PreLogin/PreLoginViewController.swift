@@ -76,6 +76,7 @@ class PreLoginViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 17, weight: .medium)
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 15, right: 0)
         button.contentVerticalAlignment = .bottom
+        button.addTarget(self, action: #selector(didTapPix), for: .touchUpInside)
         return button
     }()
     
@@ -95,6 +96,7 @@ class PreLoginViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 17, weight: .medium)
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 15, right: 0)
         button.contentVerticalAlignment = .bottom
+        button.addTarget(self, action: #selector(didTapAcToken), for: .touchUpInside)
         return button
     }()
     
@@ -114,6 +116,7 @@ class PreLoginViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 17, weight: .medium)
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 15, right: 0)
         button.contentVerticalAlignment = .bottom
+        button.addTarget(self, action: #selector(didTapAccess), for: .touchUpInside)
         return button
     }()
     
@@ -218,5 +221,15 @@ class PreLoginViewController: UIViewController {
     
     // MARK: Setup navigations
     
+    @objc func didTapPix() {
+        router?.routeToPix()
+    }
     
+    @objc func didTapAcToken() {
+        router?.routeToAcToken()
+    }
+    
+    @objc func didTapAccess() {
+        router?.routeToAccess()
+    }
 }
