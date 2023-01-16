@@ -21,7 +21,7 @@ class SplashRouter: SplashRoutingLogic {
             UIView.animate(withDuration: 0, animations: {}, completion: { done in
                 if done {
                     DispatchQueue.main.async {
-                        let vc = PreLoginConfigurator.config()
+                        let vc = PreLoginFactory.config()
                         let navigation = UINavigationController(rootViewController: vc)
                         navigation.modalPresentationStyle = .fullScreen
                         navigation.modalTransitionStyle = .crossDissolve

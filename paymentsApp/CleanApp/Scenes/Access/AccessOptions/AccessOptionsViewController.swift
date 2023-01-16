@@ -1,5 +1,5 @@
 //
-//  LoginOptionsViewController.swift
+//  AccessOptionsViewController.swift
 //  paymentsApp
 //
 //  Created by Luccas Santana Marinho on 12/01/23.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol LoginOptionsViewControllerDisplayLogic {
+protocol AccessOptionsViewControllerDisplayLogic {
     func display()
 }
 
-class LoginOptionsViewController: UIViewController {
-    var interactor: LoginOptionsInteractorLogic?
-    var router: LoginOptionsRoutingLogic?
+class AccessOptionsViewController: UIViewController {
+    var interactor: AccessOptionsInteractorLogic?
+    var router: AccessOptionsRoutingLogic?
     
     // MARK: Setup life cycle
 
@@ -29,7 +29,7 @@ class LoginOptionsViewController: UIViewController {
         
     // MARK: Setup UserDefaults Access
         
-        UserDefaults.standard.set(true, forKey: "LoginOptionsViewController")
+        UserDefaults.standard.set(true, forKey: "AccessOptionsViewController")
     }
     
     // MARK: Setup itens of view
@@ -61,19 +61,22 @@ class LoginOptionsViewController: UIViewController {
     }()
     
     lazy var button: UIButton = {
-        let button = UIButton()
+        let button = Buttons().buttonEnabled()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.titleLabel?.font = .systemFont(ofSize: 17, weight: .medium)
-        button.backgroundColor = Colors.colorDefault
-        button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(didTapAlert), for: .touchUpInside)
         return button
     }()
     
     lazy var accessTap: UILabel = {
         let text = UILabel()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapLogin))
+        text.addGestureRecognizer(tap)
+        
         text.translatesAutoresizingMaskIntoConstraints = false
+        text.isUserInteractionEnabled = true
         text.textColor = Colors.colorDefault
         text.font = .systemFont(ofSize: 18, weight: .medium)
+        text.addGestureRecognizer(tap)
         return text
     }()
     
@@ -87,10 +90,8 @@ class LoginOptionsViewController: UIViewController {
         view.addSubview(accessTap)
         
         interactor?.fetch()
-        setupStatusBarVisible()
         setupConstraints()
         lockOrientation()
-        setupStatusBarDark()
     }
     
     // MARK: Setup constraints
@@ -131,4 +132,12 @@ class LoginOptionsViewController: UIViewController {
     }
     
     // MARK: Setup navigations
+    
+    @objc func didTapAlert() {
+        router?.routeToBrowser()
+    }
+    
+    @objc func didTapLogin() {
+        router?.routeToLogin()
+    }
 }

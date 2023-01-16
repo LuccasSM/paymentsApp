@@ -230,6 +230,6 @@ class PreLoginViewController: UIViewController {
     }
     
     @objc func didTapAccess() {
-        router?.routeToAccess()
+        router?.routeToLogin()
     }
 }

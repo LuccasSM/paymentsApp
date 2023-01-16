@@ -1,5 +1,5 @@
 //
-//  SplashConfigurator.swift
+//  PreLoginFactory.swift
 //  paymentsApp
 //
 //  Created by Luccas Santana Marinho on 10/01/23.
@@ -7,15 +7,15 @@
 
 import UIKit
 
-class SplashConfigurator {
+class PreLoginFactory {
     
     // MARK: Configuration
     
-    static func config() -> SplashViewController {
-        let vc = SplashViewController()
-        let interactor = SplashInteractor()
-        let presenter = SplashPresenter()
-        let router = SplashRouter()
+    static func config() -> PreLoginViewController {
+        let vc = PreLoginViewController()
+        let interactor = PreLoginInteractor()
+        let presenter = PreLoginPresenter()
+        let router = PreLoginRouter()
 
         vc.interactor = interactor
         vc.router = router

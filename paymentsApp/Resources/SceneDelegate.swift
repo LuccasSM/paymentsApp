@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let vc = SplashConfigurator.config()
+        let vc = SplashFactory.config()
         let navigation = UINavigationController(rootViewController: vc)
         let window = UIWindow(windowScene: windowScene)
         

@@ -1,5 +1,5 @@
 //
-//  PixHomeViewController.swift
+//  PixViewController.swift
 //  paymentsApp
 //
 //  Created by Luccas Santana Marinho on 12/01/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PixHomeViewController: UIViewController {
+class PixViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

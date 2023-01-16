@@ -10,7 +10,7 @@ import UIKit
 protocol PreLoginRoutingLogic {
     func routeToPix()
     func routeToAcToken()
-    func routeToAccess()
+    func routeToLogin()
 }
 
 class PreLoginRouter: PreLoginRoutingLogic {
@@ -20,29 +20,31 @@ class PreLoginRouter: PreLoginRoutingLogic {
     
     func routeToPix() {
         if let vc = viewController?.navigationController {
-            vc.pushViewController(PixHomeViewController(), animated: true)
+            vc.pushViewController(PixViewController(), animated: true)
         }
     }
     
     func routeToAcToken() {
-        let vc = AcTokenHomeViewController()
+        let vc = AcTokenViewController()
         let navigation = UINavigationController(rootViewController: vc)
         navigation.modalPresentationStyle = .fullScreen
         viewController?.present(navigation, animated: true)
+        setupStatusBarDark()
     }
     
-    func routeToAccess() {
+    func routeToLogin() {
         let defaults = UserDefaults.standard
         
-        if let _ = defaults.string(forKey: "LoginOptionsViewController") {
+        if let _ = defaults.string(forKey: "AccessOptionsViewController") {
             if let vc = viewController?.navigationController {
-                vc.pushViewController(TesteViewController(), animated: true)
+                vc.pushViewController(LoginFactory.config(), animated: true)
             }
         } else {
-            let vc = LoginOptionsConfigurator.config()
+            let vc = AccessOptionsFactory.config()
             let navigation = UINavigationController(rootViewController: vc)
             navigation.modalPresentationStyle = .fullScreen
             viewController?.present(navigation, animated: true)
+            setupStatusBarDark()
         }
     }
 }

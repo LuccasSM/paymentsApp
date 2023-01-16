@@ -1,5 +1,5 @@
 //
-//  LoginOptionsConfigurator.swift
+//  AccessOptionsFactory.swift
 //  paymentsApp
 //
 //  Created by Luccas Santana Marinho on 12/01/23.
@@ -7,15 +7,15 @@
 
 import UIKit
 
-class LoginOptionsConfigurator {
+class AccessOptionsFactory {
     
     // MARK: Configuration
     
-    static func config() -> LoginOptionsViewController {
-        let vc = LoginOptionsViewController()
-        let interactor = LoginOptionsInteractor()
-        let presenter = LoginOptionsPresenter()
-        let router = LoginOptionsRouter()
+    static func config() -> AccessOptionsViewController {
+        let vc = AccessOptionsViewController()
+        let interactor = AccessOptionsInteractor()
+        let presenter = AccessOptionsPresenter()
+        let router = AccessOptionsRouter()
 
         vc.interactor = interactor
         vc.router = router
