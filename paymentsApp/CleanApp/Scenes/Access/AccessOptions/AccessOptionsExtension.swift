@@ -16,15 +16,27 @@ extension AccessOptionsViewController: AccessOptionsViewControllerDisplayLogic {
     }
     
     @objc func setupAlert() {
-        let alert = UIAlertController(title: "Você será redirecionado", message: "Fique tranquilo! Você será \nredirecionado para o nosso site onde \npoderá dar continuidade com a \nabertura da sua conta Alpha Credit.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "fechar", style: .default))
-        alert.addAction(UIAlertAction(title: "Ir para o site", style: .default, handler: {action in
+        alert = UIAlertController(title: "Você será redirecionado", message: "Fique tranquilo! Você será \nredirecionado para o nosso site onde \npoderá dar continuidade com a \nabertura da sua conta Alpha Credit.", preferredStyle: .alert)
+        self.alert?.addAction(UIAlertAction(title: "fechar", style: .default, handler:  { action in
+            self.timer?.invalidate()
+        }))
+        self.alert?.addAction(UIAlertAction(title: "Ir para o site", style: .default, handler: { action in
             self.setupBrowser()
         }))
-        present(alert, animated: true)
+        
+        if let alert = alert {
+            present(alert, animated: true)
+            timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(startBrowser), userInfo: nil, repeats: false)
+        }
+    }
+    
+    @objc func startBrowser() {
+        setupBrowser()
+        self.alert?.dismiss(animated: true)
     }
     
     @objc func setupBrowser() {
+        timer?.invalidate()
         guard let url = URL(string: "https://google.com") else { return }
         UIApplication.shared.open(url)
         

@@ -14,6 +14,8 @@ protocol LoginViewControllerDisplayLogic {
 class LoginViewController: UIViewController {
     var interactor: LoginInteractorLogic?
     var router: LoginRoutingLogic?
+    var timer: Timer?
+    var alert: UIAlertController?
     
     // MARK: Setup life cycle
 

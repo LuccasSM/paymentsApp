@@ -14,6 +14,8 @@ protocol AccessOptionsViewControllerDisplayLogic {
 class AccessOptionsViewController: UIViewController {
     var interactor: AccessOptionsInteractorLogic?
     var router: AccessOptionsRoutingLogic?
+    var timer: Timer?
+    var alert: UIAlertController?
     
     // MARK: Setup life cycle
 
