@@ -9,6 +9,7 @@ import UIKit
 
 protocol AcTokenRoutingLogic {
     func routeToPreLogin()
+    func routeToSuccessAcToken()
 }
 
 class AcTokenRouter: AcTokenRoutingLogic {
@@ -18,5 +19,11 @@ class AcTokenRouter: AcTokenRoutingLogic {
     
     func routeToPreLogin() {
         dismissToPreLogin()
+    }
+    
+    func routeToSuccessAcToken() {
+        if let vc = viewController?.navigationController {
+            vc.pushViewController(SuccessAcTokenViewController(), animated: true)
+        }
     }
 }

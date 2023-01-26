@@ -7,6 +7,7 @@
 
 import UIKit
 import LocalAuthentication
+import JGProgressHUD
 
 extension AcTokenViewController: AcTokenViewControllerDisplayLogic {
     func display() {
@@ -34,14 +35,21 @@ extension AcTokenViewController: AcTokenViewControllerDisplayLogic {
                         return
                     }
                     
-                    let alert = UIAlertController(title: "Deu sucesso", message: "está usando", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-                    self?.present(alert, animated: true)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: {
+                        self?.startLoading()
+                    })
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                        self?.didTapSuccessAcToken()
+                        self?.stopLoading()
+                    })
                 }
             }
         } else {
-            let alert = UIAlertController(title: "Erro", message: "O acToken só funciona mediante a auteticação do Face ID do seu dispositivo!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Voltar", style: .default, handler: nil))
+            let alert = UIAlertController(title: "Erro", message: "O acToken só funciona mediante a auteticação com o Face ID do seu dispositivo!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Voltar", style: .default, handler: { action in
+                self.didTapCancelar()
+            }))
             present(alert, animated: true)
         }
     }

@@ -174,4 +174,8 @@ class AcTokenViewController: UIViewController {
     @objc func didTapGerarToken() {
         invokeFaceID()
     }
+    
+    @objc func didTapSuccessAcToken() {
+        router?.routeToSuccessAcToken()
+    }
 }
