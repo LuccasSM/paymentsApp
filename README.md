@@ -37,7 +37,7 @@
 
 *** Routers: ***
 
-- All layers of telads have their routes;
+- All layers of screen have their routes;
 
 ————————————— || ——————————————
 
