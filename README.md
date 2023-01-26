@@ -61,6 +61,7 @@
 - DispatchQueue;
 - UINavigationController (present, dismiss, push, pop);
 - Success and error screens in interactive popUp;
+- Face ID;
 
 ————————————— || ——————————————
 

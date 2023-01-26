@@ -43,6 +43,36 @@ class AcTokenViewController: UIViewController {
         return text
     }()
     
+    lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }()
+
+    lazy var stackViewContainer: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.spacing = 10
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
+    lazy var text: UILabel = {
+        let text = UILabel()
+        text.translatesAutoresizingMaskIntoConstraints = false
+        text.numberOfLines = 0
+        text.textColor = .gray
+        return text
+    }()
+    
+    lazy var divider: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .systemGray
+        return view
+    }()
+    
     lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -59,12 +89,14 @@ class AcTokenViewController: UIViewController {
         button.layer.borderWidth = 1
         button.setTitleColor(Colors.colorDefault, for: .normal)
         button.layer.cornerRadius = 7
+        button.addTarget(self, action: #selector(didTapCancelar), for: .touchUpInside)
         return button
     }()
     
     lazy var buttonToken: UIButton = {
         let button = Buttons().buttonEnabled()
         button.layer.cornerRadius = 7
+        button.addTarget(self, action: #selector(didTapGerarToken), for: .touchUpInside)
         return button
     }()
     
@@ -72,8 +104,12 @@ class AcTokenViewController: UIViewController {
     
     func setupViews() {
         view.addSubview(image)
-        view.addSubview(stackView)
         view.addSubview(titleView)
+        view.addSubview(stackView)
+        view.addSubview(scrollView)
+        view.addSubview(divider)
+        scrollView.addSubview(stackViewContainer)
+        stackViewContainer.addArrangedSubview(text)
         stackView.addArrangedSubview(buttonCancel)
         stackView.addArrangedSubview(buttonToken)
         
@@ -97,6 +133,26 @@ class AcTokenViewController: UIViewController {
             titleView.topAnchor.constraint(equalTo: self.image.safeAreaLayoutGuide.bottomAnchor, constant: 16)
         ]
         
+        let scrollView = [
+            scrollView.topAnchor.constraint(equalTo: self.titleView.bottomAnchor, constant: 30),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: self.divider.bottomAnchor, constant: -30),
+        ]
+        
+        let stackViewController = [
+            stackViewContainer.topAnchor.constraint(equalTo: self.scrollView.contentLayoutGuide.topAnchor),
+            stackViewContainer.bottomAnchor.constraint(equalTo: self.scrollView.contentLayoutGuide.bottomAnchor),
+            stackViewContainer.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor, constant: -2 * 30),
+            stackViewContainer.centerXAnchor.constraint(equalTo: self.scrollView.centerXAnchor),
+        ]
+        
+        let divider = [
+            divider.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
+            divider.heightAnchor.constraint(equalToConstant: 1),
+            divider.bottomAnchor.constraint(equalTo: stackView.safeAreaLayoutGuide.topAnchor, constant: -18),
+        ]
+        
         let stackView = [
             stackView.heightAnchor.constraint(equalToConstant: 50),
             stackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
@@ -104,10 +160,18 @@ class AcTokenViewController: UIViewController {
             stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
         ]
         
-        NSLayoutConstraint.activate(image + titleView + stackView)
+        NSLayoutConstraint.activate(image + titleView + scrollView + stackViewController + divider + stackView)
         
         bgHidden()
     }
     
     // MARK: Setup navigations
+    
+    @objc func didTapCancelar() {
+        router?.routeToPreLogin()
+    }
+    
+    @objc func didTapGerarToken() {
+        invokeFaceID()
+    }
 }

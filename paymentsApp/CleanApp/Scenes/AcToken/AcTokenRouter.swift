@@ -7,10 +7,16 @@
 
 import UIKit
 
-protocol AcTokenRoutingLogic {}
+protocol AcTokenRoutingLogic {
+    func routeToPreLogin()
+}
 
 class AcTokenRouter: AcTokenRoutingLogic {
     weak var viewController: AcTokenViewController?
     
     // MARK: Routers
+    
+    func routeToPreLogin() {
+        dismissToPreLogin()
+    }
 }
