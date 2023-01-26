@@ -16,5 +16,7 @@ class AccessOptionsPresenter: AccessOptionsPresenterLogic {
     
     func fetch() {
         viewController?.display()
+        viewController?.setupBackground()
+        viewController?.dismissAlertBackground()
     }
 }

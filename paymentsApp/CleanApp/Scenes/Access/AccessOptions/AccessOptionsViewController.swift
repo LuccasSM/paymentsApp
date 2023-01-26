@@ -9,6 +9,8 @@ import UIKit
 
 protocol AccessOptionsViewControllerDisplayLogic {
     func display()
+    func setupBackground()
+    func dismissAlertBackground()
 }
 
 class AccessOptionsViewController: UIViewController {
@@ -131,6 +133,8 @@ class AccessOptionsViewController: UIViewController {
         ]
         
         NSLayoutConstraint.activate(image + titleView + textView + button + accessTap)
+        
+        bgHidden()
     }
     
     // MARK: Setup navigations

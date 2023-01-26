@@ -15,6 +15,10 @@ extension AccessOptionsViewController: AccessOptionsViewControllerDisplayLogic {
         accessTap.attributedText = NSAttributedString(string: "Já sou cliente", attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
     }
     
+    func dismissAlertBackground() {
+        NotificationCenter.default.addObserver(self, selector: #selector(setupDismissAlertBackground), name: UIApplication.willResignActiveNotification, object: .none)
+    }
+    
     @objc func setupAlert() {
         alert = UIAlertController(title: "Você será redirecionado", message: "Fique tranquilo! Você será \nredirecionado para o nosso site onde \npoderá dar continuidade com a \nabertura da sua conta Alpha Credit.", preferredStyle: .alert)
         self.alert?.addAction(UIAlertAction(title: "fechar", style: .default, handler:  { action in
@@ -44,5 +48,10 @@ extension AccessOptionsViewController: AccessOptionsViewControllerDisplayLogic {
             self.dismiss(animated: true)
             setupStatusBarLight()
         })
+    }
+    
+    @objc func setupDismissAlertBackground() {
+        self.dismiss(animated: true)
+        self.timer?.invalidate()
     }
 }

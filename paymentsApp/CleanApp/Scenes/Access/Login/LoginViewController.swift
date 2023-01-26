@@ -9,6 +9,8 @@ import UIKit
 
 protocol LoginViewControllerDisplayLogic {
     func display()
+    func setupBackground()
+    func dismissAlertBackground()
 }
 
 class LoginViewController: UIViewController {
@@ -138,7 +140,7 @@ class LoginViewController: UIViewController {
     func setupConstraints() {
         let viewGreen = [
             viewGreen.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
-            viewGreen.heightAnchor.constraint(equalToConstant: 250),
+            viewGreen.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.27),
             viewGreen.topAnchor.constraint(equalTo: view.topAnchor),
         ]
         
@@ -203,6 +205,8 @@ class LoginViewController: UIViewController {
         ]
         
         NSLayoutConstraint.activate(viewGreen + titleView + viewTextField + tfCpf + borderCpf + tfSenha + borderSenha + switchButton + textLembrar + button + accessTap)
+        
+        bgHidden()
     }
     
     // MARK: Setup navigations

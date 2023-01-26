@@ -9,7 +9,7 @@ import UIKit
 
 class AccessOptionsFactory {
     
-    // MARK: Configuration
+    // MARK: Factory
     
     static func config() -> AccessOptionsViewController {
         let vc = AccessOptionsViewController()

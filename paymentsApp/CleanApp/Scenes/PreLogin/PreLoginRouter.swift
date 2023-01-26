@@ -25,7 +25,7 @@ class PreLoginRouter: PreLoginRoutingLogic {
     }
     
     func routeToAcToken() {
-        let vc = AcTokenViewController()
+        let vc = AcTokenFactory.config()
         let navigation = UINavigationController(rootViewController: vc)
         navigation.modalPresentationStyle = .fullScreen
         viewController?.present(navigation, animated: true)

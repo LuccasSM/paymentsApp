@@ -16,5 +16,6 @@ class PreLoginPresenter: PreLoginPresenterLogic {
     
     func fetch() {
         viewController?.display()
+        viewController?.setupBackground()
     }
 }

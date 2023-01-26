@@ -9,6 +9,7 @@ import UIKit
 
 protocol PreLoginViewControllerDisplayLogic {
     func display()
+    func setupBackground()
 }
 
 class PreLoginViewController: UIViewController {
@@ -217,6 +218,8 @@ class PreLoginViewController: UIViewController {
         ]
         
         NSLayoutConstraint.activate(viewGreen + logo + textPay + textPix + stackView + imagePix + imageToken + imageAccess + versionApp)
+        
+        bgHidden()
     }
     
     // MARK: Setup navigations

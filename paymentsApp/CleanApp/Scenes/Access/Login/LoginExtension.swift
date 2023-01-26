@@ -22,6 +22,10 @@ extension LoginViewController: LoginViewControllerDisplayLogic {
         textLembrar.text = "lembrar meus dados"
     }
     
+    func dismissAlertBackground() {
+        NotificationCenter.default.addObserver(self, selector: #selector(setupDismissAlertBackground), name: UIApplication.willResignActiveNotification, object: .none)
+    }
+    
     @objc func setupAlert() {
         alert = UIAlertController(title: "Você será redirecionado", message: "Fique tranquilo! Você será \nredirecionado para o nosso site onde \npoderá dar continuidade com a \nabertura da sua conta Alpha Credit.", preferredStyle: .alert)
         self.alert?.addAction(UIAlertAction(title: "fechar", style: .default, handler:  { action in
@@ -51,5 +55,10 @@ extension LoginViewController: LoginViewControllerDisplayLogic {
             self.navigationController?.popViewController(animated: true)
             setupStatusBarLight()
         })
+    }
+    
+    @objc func setupDismissAlertBackground() {
+        self.dismiss(animated: true)
+        self.timer?.invalidate()
     }
 }

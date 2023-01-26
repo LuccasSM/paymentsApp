@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B39FCED4A4EB8BC7B6170AF2 /* Pods_paymentsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA0DA280596207CB832827D /* Pods_paymentsApp.framework */; };
 		F800A91129742D2900FD8EF9 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91029742D2900FD8EF9 /* LoginFactory.swift */; };
 		F800A91329742D3100FD8EF9 /* LoginExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91229742D3100FD8EF9 /* LoginExtension.swift */; };
 		F800A91529742D3B00FD8EF9 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91429742D3B00FD8EF9 /* LoginInteractor.swift */; };
@@ -15,6 +16,7 @@
 		F800A91C2974345800FD8EF9 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91B2974345800FD8EF9 /* Buttons.swift */; };
 		F800A91E29743AE900FD8EF9 /* DismissPopVcAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91D29743AE900FD8EF9 /* DismissPopVcAll.swift */; };
 		F800A9242974D3DA00FD8EF9 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A9232974D3DA00FD8EF9 /* TextField.swift */; };
+		F80EB4E029770FF50054911F /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80EB4DF29770FF50054911F /* Background.swift */; };
 		F8380F4E296D8F5800CAE3B0 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F4D296D8F5800CAE3B0 /* SplashInteractor.swift */; };
 		F8380F50296D8F6000CAE3B0 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F4F296D8F6000CAE3B0 /* SplashPresenter.swift */; };
 		F8380F52296D8F6B00CAE3B0 /* SplashFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8380F51296D8F6B00CAE3B0 /* SplashFactory.swift */; };
@@ -33,6 +35,11 @@
 		F867AAA5296C36B300C14767 /* SetupStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867AAA2296C36B300C14767 /* SetupStatusBar.swift */; };
 		F867AAA6296C36B300C14767 /* AppRotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867AAA3296C36B300C14767 /* AppRotations.swift */; };
 		F867AAA7296C36B300C14767 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867AAA4296C36B300C14767 /* Colors.swift */; };
+		F86D36B82982BA0E004C3A82 /* AcTokenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D36B72982BA0E004C3A82 /* AcTokenExtension.swift */; };
+		F86D36BA2982BA15004C3A82 /* AcTokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D36B92982BA15004C3A82 /* AcTokenFactory.swift */; };
+		F86D36BC2982BA21004C3A82 /* AcTokenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D36BB2982BA21004C3A82 /* AcTokenInteractor.swift */; };
+		F86D36BE2982BA2A004C3A82 /* AcTokenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D36BD2982BA2A004C3A82 /* AcTokenPresenter.swift */; };
+		F86D36C02982BA31004C3A82 /* AcTokenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86D36BF2982BA31004C3A82 /* AcTokenRouter.swift */; };
 		F8BCCBD3296C35280088AF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BCCBD2296C35280088AF28 /* AppDelegate.swift */; };
 		F8BCCBD5296C35280088AF28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BCCBD4296C35280088AF28 /* SceneDelegate.swift */; };
 		F8BCCBD7296C35280088AF28 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BCCBD6296C35280088AF28 /* SplashViewController.swift */; };
@@ -48,6 +55,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BA0DA280596207CB832827D /* Pods_paymentsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paymentsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35AA57F68EBB9589932F34DB /* Pods-paymentsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paymentsApp.release.xcconfig"; path = "Target Support Files/Pods-paymentsApp/Pods-paymentsApp.release.xcconfig"; sourceTree = "<group>"; };
+		58731E38B6AF2460448FCD92 /* Pods-paymentsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paymentsApp.debug.xcconfig"; path = "Target Support Files/Pods-paymentsApp/Pods-paymentsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F800A91029742D2900FD8EF9 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
 		F800A91229742D3100FD8EF9 /* LoginExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtension.swift; sourceTree = "<group>"; };
 		F800A91429742D3B00FD8EF9 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
@@ -56,6 +66,7 @@
 		F800A91B2974345800FD8EF9 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		F800A91D29743AE900FD8EF9 /* DismissPopVcAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissPopVcAll.swift; sourceTree = "<group>"; };
 		F800A9232974D3DA00FD8EF9 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		F80EB4DF29770FF50054911F /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		F8380F4D296D8F5800CAE3B0 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		F8380F4F296D8F6000CAE3B0 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		F8380F51296D8F6B00CAE3B0 /* SplashFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFactory.swift; sourceTree = "<group>"; };
@@ -74,6 +85,11 @@
 		F867AAA2296C36B300C14767 /* SetupStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupStatusBar.swift; sourceTree = "<group>"; };
 		F867AAA3296C36B300C14767 /* AppRotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRotations.swift; sourceTree = "<group>"; };
 		F867AAA4296C36B300C14767 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F86D36B72982BA0E004C3A82 /* AcTokenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcTokenExtension.swift; sourceTree = "<group>"; };
+		F86D36B92982BA15004C3A82 /* AcTokenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcTokenFactory.swift; sourceTree = "<group>"; };
+		F86D36BB2982BA21004C3A82 /* AcTokenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcTokenInteractor.swift; sourceTree = "<group>"; };
+		F86D36BD2982BA2A004C3A82 /* AcTokenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcTokenPresenter.swift; sourceTree = "<group>"; };
+		F86D36BF2982BA31004C3A82 /* AcTokenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcTokenRouter.swift; sourceTree = "<group>"; };
 		F8BCCBCF296C35280088AF28 /* paymentsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paymentsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BCCBD2296C35280088AF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8BCCBD4296C35280088AF28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,12 +111,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39FCED4A4EB8BC7B6170AF2 /* Pods_paymentsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE9EB3628A6D57F2FD0AC916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BA0DA280596207CB832827D /* Pods_paymentsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F800A90D297388E200FD8EF9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +162,11 @@
 		F846E3802970A8020089E19B /* AcToken */ = {
 			isa = PBXGroup;
 			children = (
+				F86D36B72982BA0E004C3A82 /* AcTokenExtension.swift */,
+				F86D36B92982BA15004C3A82 /* AcTokenFactory.swift */,
+				F86D36BB2982BA21004C3A82 /* AcTokenInteractor.swift */,
+				F86D36BD2982BA2A004C3A82 /* AcTokenPresenter.swift */,
+				F86D36BF2982BA31004C3A82 /* AcTokenRouter.swift */,
 				F846E3842970A8F50089E19B /* AcTokenViewController.swift */,
 			);
 			path = AcToken;
@@ -195,6 +225,7 @@
 			children = (
 				F867AAA3296C36B300C14767 /* AppRotations.swift */,
 				F8BCCBDB296C352A0088AF28 /* Assets.xcassets */,
+				F80EB4DF29770FF50054911F /* Background.swift */,
 				F800A91B2974345800FD8EF9 /* Buttons.swift */,
 				F867AAA4296C36B300C14767 /* Colors.swift */,
 				F800A91D29743AE900FD8EF9 /* DismissPopVcAll.swift */,
@@ -239,6 +270,8 @@
 			children = (
 				F8BCCBD1296C35280088AF28 /* paymentsApp */,
 				F8BCCBD0296C35280088AF28 /* Products */,
+				FA7F1CB878AECAACD1DE5501 /* Pods */,
+				CE9EB3628A6D57F2FD0AC916 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,6 +308,15 @@
 			path = PreLogin;
 			sourceTree = "<group>";
 		};
+		FA7F1CB878AECAACD1DE5501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58731E38B6AF2460448FCD92 /* Pods-paymentsApp.debug.xcconfig */,
+				35AA57F68EBB9589932F34DB /* Pods-paymentsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,9 +324,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8BCCBE3296C352A0088AF28 /* Build configuration list for PBXNativeTarget "paymentsApp" */;
 			buildPhases = (
+				912AD338F1EE418D2DC41E8F /* [CP] Check Pods Manifest.lock */,
 				F8BCCBCB296C35280088AF28 /* Sources */,
 				F8BCCBCC296C35280088AF28 /* Frameworks */,
 				F8BCCBCD296C35280088AF28 /* Resources */,
+				EA38C228A505DB18FFC089ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +386,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		912AD338F1EE418D2DC41E8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-paymentsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA38C228A505DB18FFC089ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-paymentsApp/Pods-paymentsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-paymentsApp/Pods-paymentsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-paymentsApp/Pods-paymentsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8BCCBCB296C35280088AF28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -352,6 +438,7 @@
 				F846E38D2970ABB10089E19B /* AccessOptionsFactory.swift in Sources */,
 				F800A91529742D3B00FD8EF9 /* LoginInteractor.swift in Sources */,
 				F8BCCBD7296C35280088AF28 /* SplashViewController.swift in Sources */,
+				F86D36BE2982BA2A004C3A82 /* AcTokenPresenter.swift in Sources */,
 				F8380F4E296D8F5800CAE3B0 /* SplashInteractor.swift in Sources */,
 				F867AAA7296C36B300C14767 /* Colors.swift in Sources */,
 				F846E38F2970ABBA0089E19B /* AccessOptionsInteractor.swift in Sources */,
@@ -359,6 +446,7 @@
 				F846E3992970B3460089E19B /* SetupGif.swift in Sources */,
 				F800A91329742D3100FD8EF9 /* LoginExtension.swift in Sources */,
 				F800A9242974D3DA00FD8EF9 /* TextField.swift in Sources */,
+				F80EB4E029770FF50054911F /* Background.swift in Sources */,
 				F800A91E29743AE900FD8EF9 /* DismissPopVcAll.swift in Sources */,
 				F8380F50296D8F6000CAE3B0 /* SplashPresenter.swift in Sources */,
 				F846E3932970ABCA0089E19B /* AccessOptionsRouter.swift in Sources */,
@@ -368,16 +456,20 @@
 				F800A91129742D2900FD8EF9 /* LoginFactory.swift in Sources */,
 				F846E3882970A9350089E19B /* AccessOptionsViewController.swift in Sources */,
 				F867AAA6296C36B300C14767 /* AppRotations.swift in Sources */,
+				F86D36BA2982BA15004C3A82 /* AcTokenFactory.swift in Sources */,
 				F846E39B2970B5820089E19B /* LoginViewController.swift in Sources */,
 				F8EAE922296E3BC2001475E0 /* PreLoginInteractor.swift in Sources */,
 				F8380F54296D8F7200CAE3B0 /* SplashRouter.swift in Sources */,
 				F867AAA5296C36B300C14767 /* SetupStatusBar.swift in Sources */,
+				F86D36C02982BA31004C3A82 /* AcTokenRouter.swift in Sources */,
 				F800A91C2974345800FD8EF9 /* Buttons.swift in Sources */,
+				F86D36B82982BA0E004C3A82 /* AcTokenExtension.swift in Sources */,
 				F8BCCBD3296C35280088AF28 /* AppDelegate.swift in Sources */,
 				F800A91929742D4B00FD8EF9 /* LoginRouter.swift in Sources */,
 				F800A91729742D4400FD8EF9 /* LoginPresenter.swift in Sources */,
 				F8380F52296D8F6B00CAE3B0 /* SplashFactory.swift in Sources */,
 				F846E38B2970ABA30089E19B /* AccessOptionsExtension.swift in Sources */,
+				F86D36BC2982BA21004C3A82 /* AcTokenInteractor.swift in Sources */,
 				F846E3852970A8F50089E19B /* AcTokenViewController.swift in Sources */,
 				F8BCCBD5296C35280088AF28 /* SceneDelegate.swift in Sources */,
 				F8EAE92A296E3BE8001475E0 /* PreLoginExtension.swift in Sources */,
@@ -522,6 +614,7 @@
 		};
 		F8BCCBE4296C352A0088AF28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58731E38B6AF2460448FCD92 /* Pods-paymentsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -552,6 +645,7 @@
 		};
 		F8BCCBE5296C352A0088AF28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35AA57F68EBB9589932F34DB /* Pods-paymentsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

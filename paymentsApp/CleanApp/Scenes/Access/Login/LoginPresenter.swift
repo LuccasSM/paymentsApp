@@ -16,5 +16,7 @@ class LoginPresenter: LoginPresenterLogic {
     
     func fetch() {
         viewController?.display()
+        viewController?.setupBackground()
+        viewController?.dismissAlertBackground()
     }
 }

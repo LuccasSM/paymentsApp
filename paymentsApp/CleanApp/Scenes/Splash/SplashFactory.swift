@@ -9,7 +9,7 @@ import UIKit
 
 class SplashFactory {
     
-    // MARK: Configuration
+    // MARK: Factory
     
     static func config() -> SplashViewController {
         let vc = SplashViewController()

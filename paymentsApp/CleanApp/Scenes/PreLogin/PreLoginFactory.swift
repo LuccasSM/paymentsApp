@@ -9,7 +9,7 @@ import UIKit
 
 class PreLoginFactory {
     
-    // MARK: Configuration
+    // MARK: Factory
     
     static func config() -> PreLoginViewController {
         let vc = PreLoginViewController()
