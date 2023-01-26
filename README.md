@@ -30,8 +30,8 @@
 - Splash;
 - PreLogin;
 - Pix;
-- AcToken;
-- Acessar;
+- AcToken (screen acToken, success acToken);
+- Acessar (one access, login);
 
 ————————————— || ——————————————
 
@@ -50,8 +50,10 @@
 - Colors all;
 - Dismiss scenes (main);
 - Gifs animations;
+- Progress View (screen loading);
 - Setup StyleBar (status);
 - Textfield all;
+- UIViewController extension;
 
 ————————————— || ——————————————
 

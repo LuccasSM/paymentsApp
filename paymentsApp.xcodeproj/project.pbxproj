@@ -268,9 +268,9 @@
 				F867AAA4296C36B300C14767 /* Colors.swift */,
 				F800A91D29743AE900FD8EF9 /* DismissPopVcAll.swift */,
 				F846E3942970B2FE0089E19B /* Gifs */,
+				F82916F929830807009D8750 /* ProgressView.swift */,
 				F867AAA2296C36B300C14767 /* SetupStatusBar.swift */,
 				F800A9232974D3DA00FD8EF9 /* TextField.swift */,
-				F82916F929830807009D8750 /* ProgressView.swift */,
 				F82916FB29830836009D8750 /* UIViewControllerExtension.swift */,
 			);
 			path = Utilities;
