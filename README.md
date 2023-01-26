@@ -8,8 +8,8 @@
 
 *** Lifecycle VIP: ***
 
-- Configurator (Factory);
 - Extension (optional);
+- Factory (Configurator);
 - Interactor;
 - Presenter;
 - Router;
@@ -29,5 +29,41 @@
 
 - Splash;
 - PreLogin;
+- Pix;
+- AcToken;
+- Acessar;
 
 ————————————— || ——————————————
+
+*** Routers: ***
+
+- All layers of telads have their routes;
+
+————————————— || ——————————————
+
+*** Utilities project: ***
+
+- App rotation;
+- Assets;
+- Background app (enter and exit);
+- Buttons all;
+- Colors all;
+- Dismiss scenes (main);
+- Gifs animations;
+- Setup StyleBar (status);
+- Textfield all;
+
+————————————— || ——————————————
+
+*** Items to take into account: ***
+
+- Alerts (native);
+- DispatchQueue;
+- UINavigationController (present, dismiss, push, pop);
+- Success and error screens in interactive popUp;
+
+————————————— || ——————————————
+
+*** Pods for app: ***
+
+- JGProgressHUD (loading);
