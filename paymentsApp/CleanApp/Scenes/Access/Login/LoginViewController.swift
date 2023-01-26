@@ -211,10 +211,6 @@ class LoginViewController: UIViewController {
     
     // MARK: Setup navigations
     
-    @objc func didTapPreLogin() {
-        router?.routeToPreLogin()
-    }
-    
     @objc func didTapAlert() {
         router?.routeToBrowser()
     }

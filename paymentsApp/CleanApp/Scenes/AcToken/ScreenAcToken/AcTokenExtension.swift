@@ -29,7 +29,7 @@ extension AcTokenViewController: AcTokenViewControllerDisplayLogic {
                     guard success, error == nil else {
                         let alert = UIAlertController(title: "Ocorreu um erro inesperado", message: "", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "Voltar", style: .default, handler: { action in
-                            self?.didTapCancelar()
+                            self?.dismissToPreLogin()
                         }))
                         self?.present(alert, animated: true)
                         return
@@ -48,7 +48,7 @@ extension AcTokenViewController: AcTokenViewControllerDisplayLogic {
         } else {
             let alert = UIAlertController(title: "Erro", message: "O acToken só funciona mediante a auteticação com o Face ID do seu dispositivo!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Voltar", style: .default, handler: { action in
-                self.didTapCancelar()
+                self.dismissToPreLogin()
             }))
             present(alert, animated: true)
         }

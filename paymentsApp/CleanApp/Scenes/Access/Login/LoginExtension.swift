@@ -12,7 +12,7 @@ extension LoginViewController: LoginViewControllerDisplayLogic {
         
     // MARK: Setup leftBarButtonItem
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left", withConfiguration: UIImage.SymbolConfiguration(pointSize: 22, weight: .light, scale: .large))?.withTintColor(.white, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(didTapPreLogin))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left", withConfiguration: UIImage.SymbolConfiguration(pointSize: 22, weight: .light, scale: .large))?.withTintColor(.white, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(dismissToPreLogin))
         
         titleView.text = "acessar sua conta"
         button.setTitle("ok", for: .normal)

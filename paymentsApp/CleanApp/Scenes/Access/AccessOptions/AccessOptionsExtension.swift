@@ -12,7 +12,7 @@ extension AccessOptionsViewController: AccessOptionsViewControllerDisplayLogic {
         
     // MARK: Setup leftBarButtonItem
             
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark", withConfiguration: UIImage.SymbolConfiguration(pointSize: 22, weight: .light, scale: .large))?.withTintColor(.black, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(didTapPreLogin))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark", withConfiguration: UIImage.SymbolConfiguration(pointSize: 22, weight: .light, scale: .large))?.withTintColor(.black, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(dismissToPreLogin))
         
         titleView.text = "É bom ter você aqui"
         textView.text = "Estamos disponíveis para tornar sua experiência bancária a melhor de todas. Mais antes de começarmos, por favor, nos informe se já é nosso cliente ou se está aqui para abrir uma conta conosco"

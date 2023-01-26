@@ -89,7 +89,7 @@ class AcTokenViewController: UIViewController {
         button.layer.borderWidth = 1
         button.setTitleColor(Colors.colorDefault, for: .normal)
         button.layer.cornerRadius = 7
-        button.addTarget(self, action: #selector(didTapCancelar), for: .touchUpInside)
+        button.addTarget(self, action: #selector(dismissToPreLogin), for: .touchUpInside)
         return button
     }()
     
@@ -166,10 +166,6 @@ class AcTokenViewController: UIViewController {
     }
     
     // MARK: Setup navigations
-    
-    @objc func didTapCancelar() {
-        router?.routeToPreLogin()
-    }
     
     @objc func didTapGerarToken() {
         invokeFaceID()

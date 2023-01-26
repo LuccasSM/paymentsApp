@@ -14,7 +14,6 @@
 		F800A91729742D4400FD8EF9 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91629742D4400FD8EF9 /* LoginPresenter.swift */; };
 		F800A91929742D4B00FD8EF9 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91829742D4B00FD8EF9 /* LoginRouter.swift */; };
 		F800A91C2974345800FD8EF9 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91B2974345800FD8EF9 /* Buttons.swift */; };
-		F800A91E29743AE900FD8EF9 /* DismissPopVcAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91D29743AE900FD8EF9 /* DismissPopVcAll.swift */; };
 		F800A9242974D3DA00FD8EF9 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A9232974D3DA00FD8EF9 /* TextField.swift */; };
 		F80EB4E029770FF50054911F /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80EB4DF29770FF50054911F /* Background.swift */; };
 		F82916EC298305D4009D8750 /* SuccessAcTokenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82916EB298305D4009D8750 /* SuccessAcTokenExtension.swift */; };
@@ -72,7 +71,6 @@
 		F800A91629742D4400FD8EF9 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		F800A91829742D4B00FD8EF9 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		F800A91B2974345800FD8EF9 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
-		F800A91D29743AE900FD8EF9 /* DismissPopVcAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissPopVcAll.swift; sourceTree = "<group>"; };
 		F800A9232974D3DA00FD8EF9 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		F80EB4DF29770FF50054911F /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		F82916EB298305D4009D8750 /* SuccessAcTokenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessAcTokenExtension.swift; sourceTree = "<group>"; };
@@ -266,7 +264,6 @@
 				F80EB4DF29770FF50054911F /* Background.swift */,
 				F800A91B2974345800FD8EF9 /* Buttons.swift */,
 				F867AAA4296C36B300C14767 /* Colors.swift */,
-				F800A91D29743AE900FD8EF9 /* DismissPopVcAll.swift */,
 				F846E3942970B2FE0089E19B /* Gifs */,
 				F82916F929830807009D8750 /* ProgressView.swift */,
 				F867AAA2296C36B300C14767 /* SetupStatusBar.swift */,
@@ -489,7 +486,6 @@
 				F800A91329742D3100FD8EF9 /* LoginExtension.swift in Sources */,
 				F800A9242974D3DA00FD8EF9 /* TextField.swift in Sources */,
 				F80EB4E029770FF50054911F /* Background.swift in Sources */,
-				F800A91E29743AE900FD8EF9 /* DismissPopVcAll.swift in Sources */,
 				F8380F50296D8F6000CAE3B0 /* SplashPresenter.swift in Sources */,
 				F846E3932970ABCA0089E19B /* AccessOptionsRouter.swift in Sources */,
 				F82916FA29830807009D8750 /* ProgressView.swift in Sources */,

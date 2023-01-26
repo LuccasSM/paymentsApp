@@ -48,7 +48,6 @@
 - Background app (enter and exit);
 - Buttons all;
 - Colors all;
-- Dismiss scenes (main);
 - Gifs animations;
 - Progress View (screen loading);
 - Setup StyleBar (status);
