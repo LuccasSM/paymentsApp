@@ -1,4 +1,6 @@
-# paymentsApp
+# paymentsApp (name project) | Alpha Credit (name app) #
+
+————————————— || ——————————————
 
 *** Struct App (architecture): ***
 
