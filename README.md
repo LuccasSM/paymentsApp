@@ -2,6 +2,12 @@
 
 ————————————— || ——————————————
 
+*** Version app: ***
+
+- 1.0
+
+————————————— || ——————————————
+
 *** Struct App (architecture): ***
 
 - VIP (Clean Swift);
