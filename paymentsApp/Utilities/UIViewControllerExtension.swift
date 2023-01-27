@@ -30,7 +30,7 @@ extension UIViewController {
     
     // MARK: Settings Progress
     
-    func startLoading(flagProgress: Bool = true) {
+    @objc func startLoading(flagProgress: Bool = true) {
         if flagProgress {
             let viewProgress = ProgressView()
             
@@ -41,7 +41,7 @@ extension UIViewController {
         }
     }
     
-    func stopLoading() {
+    @objc func stopLoading() {
         if let window = UIApplication.shared.keyWindow {
             for childView in window.subviews {
                 if childView is ProgressView {
@@ -49,5 +49,36 @@ extension UIViewController {
                 }
             }
         }
+    }
+    
+    @objc func stopLoadingInBg() {
+        NotificationCenter.default.addObserver(self, selector: #selector(stopLoading), name: UIApplication.willResignActiveNotification, object: .none)
+    }
+}
+
+
+extension UIViewController {
+
+    // MARK: Setup background & invoking background settings
+
+    func setupBackground() {
+        NotificationCenter.default.addObserver(self, selector: #selector(exitBG), name: UIApplication.didBecomeActiveNotification, object: .none)
+        NotificationCenter.default.addObserver(self, selector: #selector(enterBG), name: UIApplication.willResignActiveNotification, object: .none)
+    }
+
+    @objc func enterBG() {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+
+    @objc func exitBG() {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+
+    // MARK: Setup background hidden is true
+
+    func bgHidden() {
+        let background = Background(frame: view.frame)
+        self.view.addSubview(background)
+        background.isHidden = true
     }
 }

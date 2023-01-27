@@ -44,31 +44,3 @@ class Background: UIView {
         self.isHidden = true
     }
 }
-
-    // MARK: invoking background settings
-
-extension UIViewController {
-    
-    // MARK: Setup background
-    
-    func setupBackground() {
-        NotificationCenter.default.addObserver(self, selector: #selector(exitBG), name: UIApplication.didBecomeActiveNotification, object: .none)
-        NotificationCenter.default.addObserver(self, selector: #selector(enterBG), name: UIApplication.willResignActiveNotification, object: .none)
-    }
-    
-    @objc func enterBG() {
-        self.navigationController?.isNavigationBarHidden = true
-    }
-
-    @objc func exitBG() {
-        self.navigationController?.isNavigationBarHidden = false
-    }
-    
-    // MARK: Setup background hidden is true
-    
-    func bgHidden() {
-        let background = Background(frame: view.frame)
-        self.view.addSubview(background)
-        background.isHidden = true
-    }
-}

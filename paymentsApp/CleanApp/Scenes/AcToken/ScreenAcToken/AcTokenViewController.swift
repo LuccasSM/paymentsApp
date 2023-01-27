@@ -116,6 +116,7 @@ class AcTokenViewController: UIViewController {
         interactor?.fetch()
         setupConstraints()
         lockOrientation()
+        stopLoadingInBg()
     }
     
     // MARK: Setup constraints
