@@ -58,5 +58,6 @@ extension AccessOptionsViewController: AccessOptionsViewControllerDisplayLogic {
     @objc func setupDismissAlertBackground() {
         self.dismiss(animated: true)
         self.timer?.invalidate()
+        setupStatusBarLight()
     }
 }

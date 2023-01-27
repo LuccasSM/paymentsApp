@@ -58,7 +58,15 @@ extension LoginViewController: LoginViewControllerDisplayLogic {
     }
     
     @objc func setupDismissAlertBackground() {
-        self.dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.reveal
+        transition.subtype = CATransitionSubtype.fromBottom
+        
+        if let window = view.window {
+            window.layer.add(transition, forKey: kCATransition)
+        }
         self.timer?.invalidate()
     }
 }
