@@ -72,6 +72,7 @@
 - Success and error screens in interactive popUp;
 - Face ID;
 - App light mode;
+- Count expiry AcToken;
 
 ————————————— || ——————————————
 
