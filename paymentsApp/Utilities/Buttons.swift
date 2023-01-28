@@ -19,4 +19,15 @@ class Buttons: UIButton {
         button.titleLabel?.font = .systemFont(ofSize: 17, weight: .medium)
         return button
     }
+    
+    // MARK: Bottom button acToken Small
+    
+    func buttonSmallAcToken() -> UIButton {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = Colors.graySmallButton
+        button.layer.cornerRadius = 22.5
+        button.titleLabel?.font = .systemFont(ofSize: 16, weight: .regular)
+        return button
+    }
 }
