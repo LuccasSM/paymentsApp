@@ -18,7 +18,7 @@ class AcTokenRouter: AcTokenRoutingLogic {
     
     func routeToSuccessAcToken() {
         if let vc = viewController?.navigationController {
-            vc.pushViewController(SuccessAcTokenViewController(), animated: true)
+            vc.pushViewController(SuccessAcTokenFactory.config(), animated: true)
         }
     }
 }

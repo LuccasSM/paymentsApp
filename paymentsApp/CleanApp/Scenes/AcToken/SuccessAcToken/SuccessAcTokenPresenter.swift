@@ -6,3 +6,15 @@
 //
 
 import UIKit
+
+protocol SuccessAcTokenPresenterLogic {
+    func fetch()
+}
+
+class SuccessAcTokenPresenter: SuccessAcTokenPresenterLogic {
+    var viewController: SuccessAcTokenViewControllerDisplayLogic?
+    
+    func fetch() {
+        viewController?.display()
+    }
+}

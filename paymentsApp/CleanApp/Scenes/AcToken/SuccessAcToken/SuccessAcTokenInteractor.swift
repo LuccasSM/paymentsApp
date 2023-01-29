@@ -6,3 +6,15 @@
 //
 
 import UIKit
+
+protocol SuccessAcTokenInteractorLogic {
+    func fetch()
+}
+
+class SuccessAcTokenInteractor: SuccessAcTokenInteractorLogic {
+    var presenter: SuccessAcTokenPresenterLogic?
+    
+    func fetch() {
+        presenter?.fetch()
+    }
+}
