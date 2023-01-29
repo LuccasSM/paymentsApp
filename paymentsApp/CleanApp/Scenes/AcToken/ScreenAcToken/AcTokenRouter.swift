@@ -20,5 +20,6 @@ class AcTokenRouter: AcTokenRoutingLogic {
         if let vc = viewController?.navigationController {
             vc.pushViewController(SuccessAcTokenFactory.config(), animated: true)
         }
+        setupStatusBarDark()
     }
 }

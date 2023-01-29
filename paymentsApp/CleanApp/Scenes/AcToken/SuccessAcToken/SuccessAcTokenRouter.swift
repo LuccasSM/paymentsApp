@@ -18,5 +18,6 @@ class SuccessAcTokenRouter: SuccessAcTokenRoutingLogic {
     
     func routeToFechar() {
         viewController?.dismissToPreLogin()
+        setupStatusBarLight()
     }
 }
