@@ -30,7 +30,6 @@ class AcTokenViewController: UIViewController {
     lazy var image: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "unlocking")
         image.contentMode = .scaleAspectFill
         return image
     }()

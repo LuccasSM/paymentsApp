@@ -12,6 +12,7 @@ import JGProgressHUD
 extension AcTokenViewController: AcTokenViewControllerDisplayLogic {
     func display() {
         title = "acToken"
+        image.image = UIImage(named: "unlocking")
         titleView.text = "Olá, vamos gerar seu token para \nacessar o app?"
         buttonCancel.setTitle("cancelar", for: .normal)
         buttonToken.setTitle("gerar token", for: .normal)
