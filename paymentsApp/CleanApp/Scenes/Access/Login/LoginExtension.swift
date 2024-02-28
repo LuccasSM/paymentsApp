@@ -15,7 +15,7 @@ extension LoginViewController: LoginViewControllerDisplayLogic {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left", withConfiguration: UIImage.SymbolConfiguration(pointSize: 22, weight: .light, scale: .large))?.withTintColor(.white, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(dismissToPreLogin))
         
         titleView.text = "acessar sua conta"
-        button.setTitle("ok", for: .normal)
+        button.setTitle("Entrar", for: .normal)
         accessTap.text = "abra sua conta no Alpha Credit  >"
         tfCpf.placeholder = "CPF"
         tfSenha.placeholder = "Senha"

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B39FCED4A4EB8BC7B6170AF2 /* Pods_paymentsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA0DA280596207CB832827D /* Pods_paymentsApp.framework */; };
+		99B89F54B604773C79FE423C /* Pods_paymentsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAF7C44C06068EA24900E3C /* Pods_paymentsApp.framework */; };
 		F800A91129742D2900FD8EF9 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91029742D2900FD8EF9 /* LoginFactory.swift */; };
 		F800A91329742D3100FD8EF9 /* LoginExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91229742D3100FD8EF9 /* LoginExtension.swift */; };
 		F800A91529742D3B00FD8EF9 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800A91429742D3B00FD8EF9 /* LoginInteractor.swift */; };
@@ -62,9 +62,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BA0DA280596207CB832827D /* Pods_paymentsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paymentsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35AA57F68EBB9589932F34DB /* Pods-paymentsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paymentsApp.release.xcconfig"; path = "Target Support Files/Pods-paymentsApp/Pods-paymentsApp.release.xcconfig"; sourceTree = "<group>"; };
-		58731E38B6AF2460448FCD92 /* Pods-paymentsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paymentsApp.debug.xcconfig"; path = "Target Support Files/Pods-paymentsApp/Pods-paymentsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1BAEC935B003F80D17FA19BE /* Pods-paymentsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paymentsApp.release.xcconfig"; path = "Target Support Files/Pods-paymentsApp/Pods-paymentsApp.release.xcconfig"; sourceTree = "<group>"; };
+		2EF7923F6C41BC395D919379 /* Pods-paymentsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paymentsApp.debug.xcconfig"; path = "Target Support Files/Pods-paymentsApp/Pods-paymentsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DDAF7C44C06068EA24900E3C /* Pods_paymentsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paymentsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F800A91029742D2900FD8EF9 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
 		F800A91229742D3100FD8EF9 /* LoginExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtension.swift; sourceTree = "<group>"; };
 		F800A91429742D3B00FD8EF9 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
@@ -125,17 +125,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B39FCED4A4EB8BC7B6170AF2 /* Pods_paymentsApp.framework in Frameworks */,
+				99B89F54B604773C79FE423C /* Pods_paymentsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE9EB3628A6D57F2FD0AC916 /* Frameworks */ = {
+		18581EB70E277C6F2DD333A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0BA0DA280596207CB832827D /* Pods_paymentsApp.framework */,
+				DDAF7C44C06068EA24900E3C /* Pods_paymentsApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 				F8BCCBD1296C35280088AF28 /* paymentsApp */,
 				F8BCCBD0296C35280088AF28 /* Products */,
 				FA7F1CB878AECAACD1DE5501 /* Pods */,
-				CE9EB3628A6D57F2FD0AC916 /* Frameworks */,
+				18581EB70E277C6F2DD333A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -348,8 +348,8 @@
 		FA7F1CB878AECAACD1DE5501 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				58731E38B6AF2460448FCD92 /* Pods-paymentsApp.debug.xcconfig */,
-				35AA57F68EBB9589932F34DB /* Pods-paymentsApp.release.xcconfig */,
+				2EF7923F6C41BC395D919379 /* Pods-paymentsApp.debug.xcconfig */,
+				1BAEC935B003F80D17FA19BE /* Pods-paymentsApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -361,11 +361,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8BCCBE3296C352A0088AF28 /* Build configuration list for PBXNativeTarget "paymentsApp" */;
 			buildPhases = (
-				912AD338F1EE418D2DC41E8F /* [CP] Check Pods Manifest.lock */,
+				AEA599C6C8586546BBE80E49 /* [CP] Check Pods Manifest.lock */,
 				F8BCCBCB296C35280088AF28 /* Sources */,
 				F8BCCBCC296C35280088AF28 /* Frameworks */,
 				F8BCCBCD296C35280088AF28 /* Resources */,
-				EA38C228A505DB18FFC089ED /* [CP] Embed Pods Frameworks */,
+				F079D38C5F9EA4C2FED5D9B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -424,7 +424,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		912AD338F1EE418D2DC41E8F /* [CP] Check Pods Manifest.lock */ = {
+		AEA599C6C8586546BBE80E49 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,7 +446,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA38C228A505DB18FFC089ED /* [CP] Embed Pods Frameworks */ = {
+		F079D38C5F9EA4C2FED5D9B9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -658,7 +658,7 @@
 		};
 		F8BCCBE4296C352A0088AF28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58731E38B6AF2460448FCD92 /* Pods-paymentsApp.debug.xcconfig */;
+			baseConfigurationReference = 2EF7923F6C41BC395D919379 /* Pods-paymentsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -674,6 +674,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,7 +691,7 @@
 		};
 		F8BCCBE5296C352A0088AF28 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35AA57F68EBB9589932F34DB /* Pods-paymentsApp.release.xcconfig */;
+			baseConfigurationReference = 1BAEC935B003F80D17FA19BE /* Pods-paymentsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -706,6 +707,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
